@@ -33,3 +33,5 @@ selectedData <- Data %>%
 First of all it extracts the first three columns which are the activity id, the subject id and the set to which they belong (test or train). Then it extracts all the columns which have "std" in them (no, not that STD, it stands for Standard Deviation). And the last three lines extract the columns that are means of as measurement, to do that we have first of all select all the columns that contain "mean" in their names,  but we have to deselect some of them which are not directly means of a measurement, those include the weighted average of the frequency components (that's why we exclude "freq" from our selection) and the additional vectors created by averaging the signals in a signal window sample on the angle() variable (that's why we exlude "angle"from our selection). That leaves us with 69 variables: 3 descriptive ones, 33 standard deviations and 33 means.
 
 **tl;dr** we select the three descriptive variables and the means and standard deviations calculated directly from each of the 33 measurements.
+
+**Thank you for your time**
